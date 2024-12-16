@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout</title>
+  <style>
+      .cards-container {
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+      }
+
+      .card {
+          width: 300px;
+          border: 1px groove black;
+          display: flex;
+          flex-direction: column;
+      }
+     
+      .card-header {
+          padding: 15px;
+          background-color: #f2f2f2; 
+      }
+
+      .card img {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+
+    
+      .card-content {
+          padding: 15px;
+          flex: 1;
+          font-size: 0.95em;
+          line-height: 1.5;
+          color: #333; 
+      }
+
+      
+      .card-footer {
+          background-color: rgb(110, 107, 107);
+          color: white;
+          text-align: center;
+        
+      }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+
+      <div class="card">
+          <div class="card-header">
+              <h2>Short Heading</h2>
+          </div>
+          <img src="/Screenshot 2024-12-16 161651.png" alt=".">
+          <div class="card-content">
+              <p>
+                  The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.
+              </p>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <h2>Short Heading</h2>
+          </div>
+          <img src="/Screenshot 2024-12-16 161651.png" alt=".">
+          <div class="card-content">
+              <p>Short content.</p>
+          </div>
+          <div class="card-footer">
+              <p>I have a footer!</p>
+          </div>
+      </div>
+
+      <!-- Third Card -->
+      <div class="card">
+          <div class="card-header">
+              <h2>Longer Heading in This Card</h2>
+          </div>
+          <img src="/Screenshot 2024-12-16 161651.png" alt=".">
+          <div class="card-content">
+              <p>
+                  In a curious work, published in Paris in 1863 by Delaville Dedreux, there is a suggestion for reaching the North Pole by an aerostat.
+              </p>
+          </div>
+          <div class="card-footer">
+              <p>I have a footer!</p>
+          </div>
+      </div>
+
+  </div>
+</body>
+</html>
